@@ -37,11 +37,11 @@ bot.on("message", function (message) {
 
         case "play":
         if(!arguments[1]){
-            message.channel.sendMessage('T^T... Give Me A Link!!');
+            message.channel.sendMessage('Give Me A Link!!');
             return;
         }
         if(!message.member.voiceChannel){
-            message.channel.sendMessage('T^T... Enter To The Voice Channel!!');
+            message.channel.sendMessage('Enter To The Voice Channel!!');
             return;
         }
         if(!servers[message.guild.id]) servers[message.guild.id] = {
@@ -67,7 +67,7 @@ bot.on("message", function (message) {
         break;
 
         default:
-        message.channel.sendMessage('oh...Command Not Found...T^T..')
+        message.channel.sendMessage('Invalid command')
         break;
 }})
 bot.login(TOKEN);
