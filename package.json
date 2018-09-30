@@ -9,6 +9,7 @@
   "author": "patron",
   "license": "ISC",
   "dependencies": {
+    "200": "0.0.1",
     "discord.js": "^11.4.2",
     "heroku": "^7.16.0",
     "logs": "^1.2.2",
